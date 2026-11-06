@@ -1,0 +1,12 @@
+.env
+node_modules/
+capture/
+*.log
+
+.env.bak.*
+accounts.json
+accounts.json.bak.*
+ds-accounts.json
+ds-accounts.json.bak.*
+sha3_wasm_bg.wasm
+*.pre-splice
