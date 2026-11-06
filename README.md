@@ -1,5 +1,7 @@
 # Crumb
 
+![Crumb — bite-sized cookie](docs/assets/crumb-banner.png)
+
 Crumb is the successor to [BEMP](https://github.com/asish231/BEMP-Browser-Enabled-Model-Protocol-) (Browser-Enabled Model Protocol, no longer maintained). Parses a streaming chat wire format. Zero dependencies, Node >= 18, browser-compatible core.
 
 Detailed setup, architecture and OS guides live in [`docs/`](docs/README.md):
