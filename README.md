@@ -1,6 +1,6 @@
 # Crumb
 
-Parses a streaming chat wire format. Zero dependencies, Node >= 18, browser-compatible core.
+Crumb is the successor to [BEMP](https://github.com/asish231/BEMP-Browser-Enabled-Model-Protocol-) (Browser-Enabled Model Protocol, no longer maintained). Parses a streaming chat wire format. Zero dependencies, Node >= 18, browser-compatible core.
 
 Detailed setup, architecture and OS guides live in [`docs/`](docs/README.md):
 architecture & PoW internals, exactly which fields to collect, macOS Full
@@ -200,3 +200,7 @@ for (const ev of parser.push(chunkText)) {
 const final = asm.finish();              // authoritative: visible + thinking
 final.visible = Wire.fixMojibake(final.visible);
 ```
+
+## License
+
+MIT — see [LICENSE](LICENSE). Successor to BEMP (Browser-Enabled Model Protocol).
