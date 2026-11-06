@@ -122,7 +122,7 @@ function buildReactStreamText() {
 }
 
 const VIEWER_HTML = '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n' +
-  '<title>stream-parser viewer</title>\n<style>\n' +
+  '<title>Crumb viewer (mock)</title>\n<style>\n' +
   '  body { font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; margin: 24px; background: #111; color: #ddd; }\n' +
   '  button { font: inherit; background: #2a2a2a; color: #ddd; border: 1px solid #444; border-radius: 4px; padding: 4px 10px; cursor: pointer; }\n' +
   '  button:hover { border-color: #888; }\n' +
@@ -130,7 +130,7 @@ const VIEWER_HTML = '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="u
   '  .out { white-space: pre-wrap; margin: 8px 0; }\n' +
   '  .stats { color: #888; margin-top: 16px; white-space: pre-wrap; }\n' +
   '</style>\n</head>\n<body>\n' +
-  '<h3>stream-parser viewer</h3>\n' +
+  '<h3>Crumb viewer (mock)</h3>\n' +
   '<p><button id="go">stream clean</button> <button id="goBad">stream mojibake</button> (both auto-repair on finish)</p>\n' +
   '<div id="think" class="think"></div>\n<div id="out" class="out"></div>\n<div id="stats" class="stats"></div>\n' +
   '<script src="/wire.js"></script>\n' +
@@ -370,7 +370,7 @@ if (require.main === module) {
   var server = createServer();
   server.listen(port, function () {
     var actual = server.address().port;
-    console.log('stream-parser mock upstream');
+    console.log('Crumb mock upstream');
     console.log('  stream : http://127.0.0.1:' + actual + '/stream?mode=clean');
     console.log('           http://127.0.0.1:' + actual + '/stream?mode=mojibake');
     console.log('  viewer : http://127.0.0.1:' + actual + '/');

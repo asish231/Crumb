@@ -8,7 +8,7 @@ Chrome's cookie database is protected by macOS. Any tool that reads it needs FDA
 2. **Fully quit and reopen** that app (FDA only applies to freshly launched processes).
 3. Verify:
    ```bash
-   cd ~/programming/stream-parser
+   cd ~/programming/Crumb
    node chrome-auth.js --list
    ```
    You should see all profiles with `[Xiaomi session ✓]` / DeepSeek session info instead of `EPERM ... Local State`.
